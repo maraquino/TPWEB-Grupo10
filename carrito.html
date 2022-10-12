@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d29453ffcf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <title>Carrito</title>
+</head>
+
+<body>
+    <header>
+        <section class="encabezado">
+          <a href="index.html"><img src="img/LOGOHEADER.png" alt="logo" id="logo" /></a>
+  
+          <form action="">
+            <label for="buscador"></label>
+            <input
+              type="search"
+              id="buscador"
+              name="buscador"
+              placeholder="Buscador"
+            />
+          </form>
+          
+          <a href="carrito.html" id="carrito"
+            ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+          ></a>
+        </section>
+      </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="categorias1.html">Categorías</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="micuenta.html">Mi Cuenta</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article class="carrito_titulo">
+            <h2>Carrito</h2>
+        </article>
+        <section class="carrito">
+            <article>
+                <div class="tabla">
+                    <h4>Producto</h4>
+                    <h4>Cantidad</h4>
+                    <h4>Precio</h4>
+
+                    <p>Mermelada</p>
+                    <p>2</p>
+                    <p>$100</p>
+
+                    <p>Polenta</p>
+                    <p>2</p>
+                    <p>$100</p>
+
+                    <p>1kg Milanesa</p>
+                    <p>1</p>
+                    <p>$100</p>
+
+                    <p>Agua mineral</p>
+                    <p>3</p>
+                    <p>$100</p>
+
+                    <p>Caja Garotos</p>
+                    <p>1</p>
+                    <p>$100</p>
+
+                    <p>Jabón Líquido</p>
+                    <p>1</p>
+                    <p>$100</p>
+
+                    <p>1kg Tomate</p>
+                    <p>1</p>
+                    <p>$100</p>
+                </div>
+                <div class="iconos">
+                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                </div>
+            </article>
+
+            <article class="botonpagar">
+                <label for="pagar" class="pagar">Pagar</label>
+                <input type="checkbox" id="pagar" />
+                <div class="modal">
+                    <div class="contenido">
+                        <div class="encabezado">
+                            <h3>Pagar</h3>
+                            <p><i class="fa-solid fa-credit-card"></i></p>
+                            <label for="pagar" class="cerrar">X</label>
+                        </div>
+                        <form action="#" method="post">
+                            <div class="contenedorinput">
+                                <label for="">Tarjetas Guardadas</label>
+                                <select name="provincias" id="provincias">
+                                    <option value="0">~~ Seleccionar ~~</option>
+                                    <option value="1">Devito Visa</option>
+                                    <option value="2">Lemon Cash</option>
+                                </select>
+                            </div>
+
+                            <div class="contenedorinput2">
+                                <input type="checkbox" name="otratarjeta" id="otratarjeta">
+                                <label for="otratarjeta">Otra Tarjeta</label>
+                            </div>
+
+                            <div class="contenedorinput">
+                                <label for="numerotarjeta">Número tarjeta</label>
+                                <input type="text" name="numerotarjeta" id="">
+                            </div>
+
+                            <div class="contenedorinput3">
+                                <label for="codigo">Código</label>
+                                <input type="text" name="codigo" id="">
+
+                                <label for="vencimiento">Vencimiento</label>
+                                <input type="date" name="vencimiento" id="">
+                            </div>
+
+                            <div class="contenedorinput">
+                            <label for="nombre-titular">Nombre Titular</label>
+                            <input type="text" name="nombre-titular" id="">
+                            </div>
+
+                            <div class="contenedorinput">
+                                <label for="">Direcciones Guardadas</label>
+                                <select name="provincias" id="provincias">
+                                    <option value="0">~~ Seleccionar ~~</option>
+                                    <option value="1">Mi depto</option>
+                                    <option value="2">Casa mamá</option>
+                                </select>
+                            </div>
+                            <div class="contenedorinput2">
+                                <input type="checkbox" name="otradireccion" id="">
+                                <label for="otradireccion">Otra Dirección</label>
+                            </div>
+                        </form>
+                        <button class="btn-guardar">Guardar</button>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <aside class="piedepagina">
+          <div class="columna1">
+            <img src="img/LOGOHEADER.png" alt="logo" />
+            <p>
+              <i class="fa-solid fa-clock"></i> Lunes a Sabado de 8 a 14hs y de 16
+              a 20hs
+            </p>
+          </div>
+          <div class="columna2">
+            <p>Datos del Grupo:</p>
+            <p>
+              Martinez Marcos- 38046528<br />
+              Aquino Mariana - 43032501 <br />
+              Sosa Ortiz Andrea - 38466989
+            </p>
+          </div>
+          <div class="columna3">
+            <p>Seguinos en</p>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" width:70px></i></a>
+          </div>
+        </aside>
+      </footer>
+
+</body>
+
+</html>

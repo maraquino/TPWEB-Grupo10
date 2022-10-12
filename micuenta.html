@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/d29453ffcf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/miCuenta.css" />
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Mi Cuenta</title>
+</head>
+
+<body>
+  <header>
+    <section class="encabezado">
+      <a href="index.html"><img src="img/LOGOHEADER.png" alt="logo" id="logo" /></a>
+
+      <form action="">
+        <label for="buscador"></label>
+        <input
+          type="search"
+          id="buscador"
+          name="buscador"
+          placeholder="Buscador"
+        />
+      </form>
+      
+      <a href="carrito.html" id="carrito"
+        ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+      ></a>
+    </section>
+  </header>
+  <nav>
+    <ul class="menu">
+      <li><a href="index2.html">Home</a></li>
+      <li><a href="categorias1.html">Categorías</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="micuenta.html">Mi Cuenta</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="nombre">
+      <img src="img/siluetacabeza.png" alt="siluetacabeza" />
+      <h1>Nombre y Apellido</h1>
+    </section>
+
+    <section class="direcciones">
+      <article class="contenedor">
+
+        <div class="titulo">
+          <h2>Mis direcciones</h2>
+          <label for="agregar" class="agregar">Agregar</label>
+          <input type="checkbox" id="agregar">
+          <div class="modal">
+            <div class="contenido">
+              <div class="encabezado">
+                <h3>Nueva Direccion</h3>
+                <p><i class="fa-solid fa-house"></i></p>
+                <label for="agregar" class="cerrar">X</label>
+              </div>
+  
+              <form action="#" method="post">
+                <div class="contenedorinput">
+                  <label for="alias" class="labelAlias">Alias</label>
+                  <input type="text" name="alias" id="alias" placeholder="Alias" required />
+                
+                  <label for="provincias"> Provincias</label>
+                  <select name="provincias" id="provincias">
+                    <option value="0">~~ Seleccionar ~~</option>
+                    <option value="1">Buenos Aires</option>
+                    <option value="2">Cordoba</option>
+                    <option value="3">Entre Rios</option>
+                  </select>
+  
+                  <label for="localidad">Localidad</label>
+                  <select name="localidad" id="localidad">
+                    <option value="0">~~ Seleccionar ~~</option>
+                    <option value="1">Buenos Aires</option>
+                    <option value="2">Cordoba</option>
+                    <option value="3">Entre Rios</option>
+                  </select>
+  
+                  <label for="direccion">Direccion</label>
+                  <input type="text" id="direccion" name="direccion" placeholder="Direccion" required />
+  
+                  <label for="telefono">Telefono</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Telefono" required />
+                </div>
+  
+                <div class="contenedorinput2">
+                  <label for="piso">Piso</label>
+                  <input type="text" id="piso" name="piso" placeholder="Piso" required />
+  
+                  <label for="dto">Dto</label>
+                  <input type="text" id="dto" name="dto" placeholder="Dto" />
+                </div>
+  
+                <button class="btn-guardar">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabla">
+          <h4>Alias</h4>
+          <h4>Dirección</h4>
+
+          <p>Mi depto</p>
+          <p>xxxxxxxxx</p>
+
+          <p>Casa mama</p>
+          <P>xxxxxxxxx</P>
+        </div>
+      </article>
+      <article class="iconos">
+        <a href=""><i class="fa-solid fa-trash"></i></a>
+        <a href=""><i class="fa-solid fa-trash"></i></a>
+      </article>
+    </section>
+
+    <section class="metodosdepago">
+      <article class="contenedor">
+        <div class="titulo">
+          <h2>Mis metodos de pago</h2>
+          <label for="agregar-pago" class="agregar">Agregar</label>
+          <input type="checkbox" id="agregar-pago" />
+          <div class="modal2">
+            <div class="contenido2">
+              <div class="encabezado">
+                <h3>Nueva Tarjeta</h3>
+                <p><i class="fa-solid fa-credit-card"></i></p>
+                <label for="agregar-pago" class="cerrar">X</label>
+              </div>
+  
+              <form action="#" method="post">
+                <div class="contenedorinput">
+                  <label for="alias2">Alias</label>
+                  <input type="text" name="alias2" id="alias2" placeholder="Alias" required />
+
+                  <label for="num-tarjeta">Número tarjeta</label>
+                  <input type="text" id="num-tarjeta" name="num-tarjeta" placeholder="Numero tarjeta" required />
+                </div>
+  
+                <div class="contenedorinput2">
+                  <label for="codigo">Código</label>
+                  <input type="password" id="codigo" name="codigo" placeholder="Cod." required />
+
+                  <label for="vencimiento">Vencimiento</label>
+                  <input type="date" id="vencimiento" name="vencimiento" placeholder="Vto." required />
+                </div>
+
+                <div class="contenedorinput">
+                  <label for="nombre-titular">Nombre titular</label>
+                  <input type="text" id="nombre-titular" name="nombre-titular" placeholder="Nombre titular" required />
+                </div>
+  
+                <button class="btn-guardar2">Guardar</button>
+              </form>
+            </div>
+          </div>  
+        </div>
+        
+        <div class="tabla">
+          <h4>Alias</h4>
+          <p>Debito VISA</p>
+          <p>Lemon cash</p>
+        </div>
+      </article>
+
+      <article class="iconos">
+        <a href=""><i class="fa-solid fa-trash"></i></a>
+        <a href=""><i class="fa-solid fa-trash"></i></a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <aside class="piedepagina">
+      <div class="columna1">
+        <img src="img/LOGOHEADER.png" alt="logo" />
+        <p>
+          <i class="fa-solid fa-clock"></i> Lunes a Sabado de 8 a 14hs y de 16
+          a 20hs
+        </p>
+      </div>
+      <div class="columna2">
+        <p>Datos del Grupo:</p>
+        <p>
+          Martinez Marcos- 38046528<br />
+          Aquino Mariana - 43032501 <br />
+          Sosa Ortiz Andrea - 38466989
+        </p>
+      </div>
+      <div class="columna3">
+        <p>Seguinos en</p>
+        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" width:70px></i></a>
+      </div>
+    </aside>
+  </footer>
+</body>
+
+</html>
