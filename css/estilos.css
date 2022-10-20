@@ -60,7 +60,6 @@ header a img {
 
 nav {
   background-color: #FFBF00;
-  border-bottom: white 5px solid;
 }
 
 nav .menu {
@@ -400,6 +399,7 @@ footer{
   font-size: 20px;
   color: white;
 }
+
 
 /*
 amarillo #FFBF00
