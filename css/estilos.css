@@ -60,6 +60,7 @@ header a img {
 
 nav {
   background-color: #FFBF00;
+  border-bottom: white 5px solid;
 }
 
 nav .menu {
