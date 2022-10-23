@@ -32,6 +32,12 @@
   border: solid #04D99D 2px;
   margin-top: 200px;
 }
+#carrito {
+  font-size: 2.18em;
+  color: #04D99D;
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
 
 #btn-modal-login:checked~.modal .contenedor-login {
   transform: translateY(0%);
@@ -44,10 +50,11 @@
 
 .lbl-modal-login {
   color: #04D99D;
-  padding: 10px 10px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 20px;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .lbl-modal-login a i {

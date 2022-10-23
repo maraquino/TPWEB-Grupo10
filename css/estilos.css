@@ -31,7 +31,7 @@ header {
 
 header a img {
   position: absolute;
-  top: 0;
+  top: 1.5em;
   left: 0.5em;
   width: 16.6em;
   z-index: 100;
@@ -349,6 +349,7 @@ h2 {
 .formasdepago img {
   width: 15.62em;
   height: 6.25em;
+  margin-top: 0.5em;
 }
 
 /*footer*/
@@ -394,7 +395,7 @@ footer{
   font-size: 20px;
   color: white;
 }
-@media screen and (min-width:37em ) {
+@media screen and (min-width:48em ) {
   
   body {
     background-color: white;
@@ -418,7 +419,7 @@ footer{
     position: absolute;
     top: 0;
     left: 0.5em;
-    width: 16.6em;
+    width: 22.6em;
     z-index: 100;
   
   }
@@ -464,7 +465,6 @@ footer{
     justify-content: space-around;
     align-items: center;
     transition: 1s;
-    width: 50%;
     margin: auto;
   }
   
@@ -497,7 +497,7 @@ footer{
   ul.banner {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 230px;
   }
   
   ul.banner li {
@@ -515,7 +515,7 @@ footer{
   ul.banner li img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background-size: cover;
   }
   
   ul.banner li:first-child {
@@ -817,34 +817,33 @@ header a img {
   position: absolute;
   top: 0;
   left: 0.5em;
-  width: 16.6em;
+  width: 26.6em;
   z-index: 100;
 
 }
 
 .encabezado {
-  width: 80%;
-  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: white;
 }
 
 #carrito {
   font-size: 2.18em;
   color: #04D99D;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 #buscador {
   border: #04D99D 1px solid;
   border-radius: 1em;
-  margin: auto;
+  margin-bottom: 1em;
   width: 30.66em;
   height: 3.5em;
   padding-left:1em;
+  padding-right:1em;
 }
 
 .menu {
