@@ -1,9 +1,19 @@
+/*
+amarillo #FFBF00
+naranja #F27405
+rosa #F279B2
+verde #04D99D
+rojo #F2220F
+*/
 * {
   margin: 0;
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+@media screen and (min-width:60em ) {
+  
+
 
 body {
   background-color: white;
@@ -49,8 +59,8 @@ header a img {
   border: #04D99D 1px solid;
   border-radius: 15px;
   margin: auto;
-  width: 500px;
-  height: 40px;
+  width: 41.66em;
+  height: 3.5em;
   padding-left:10px;
 }
 
@@ -400,11 +410,10 @@ footer{
   font-size: 20px;
   color: white;
 }
+main {
+  width: 80%;
+  margin: auto;
+}
+}
 
-/*
-amarillo #FFBF00
-naranja #F27405
-rosa #F279B2
-verde #04D99D
-rojo #F2220F
-*/
+
