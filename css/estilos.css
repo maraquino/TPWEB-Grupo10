@@ -13,8 +13,6 @@ rojo #F2220F
 }
 @media screen and (min-width:60em ) {
   
-
-
 body {
   background-color: white;
 }
@@ -28,14 +26,18 @@ a {
   color: black;
 }
 
-
 header {
   width: 100%;
   background-color: white;
 }
 
 header a img {
-  width: 170px;
+  position: absolute;
+  top: 0;
+  left: 0.5em;
+  width: 16.6em;
+  z-index: 100;
+
 }
 
 .encabezado {
@@ -43,66 +45,62 @@ header a img {
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  padding: 25px 20px;
   background-color: white;
 }
 
 #carrito {
-  font-size: 35px;
+  font-size: 2.18em;
   color: #04D99D;
 }
 
 #buscador {
   border: #04D99D 1px solid;
-  border-radius: 15px;
+  border-radius: 1em;
   margin: auto;
-  width: 41.66em;
+  width: 30.66em;
   height: 3.5em;
-  padding-left:10px;
+  padding-left:1em;
 }
 
 .menu {
-  font-size: large;
+  font-size: 1.6em;
 }
 
 nav {
   background-color: #FFBF00;
-  border-bottom: white 5px solid;
+  
 }
 
 nav .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: space-around;
+  align-items: center;
   transition: 1s;
   width: 50%;
   margin: auto;
 }
 
 nav li {
-  display: flex;
-  width: calc(25% - px);
+  width: calc(25% - 1em);
   box-sizing: border-box;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   transform: scale(1);
-  transition: s;
+  text-align: center;
 }
 
 nav li a {
-  padding-left: 10px;
-  padding-right: 10px;
   color: white;
+
 }
 
 nav li:hover {
   background-color: #F27405;
-  font-size: 25px;
 }
 
 /*banner*/
@@ -132,7 +130,7 @@ ul.banner li {
 
 ul.banner li img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -363,8 +361,8 @@ h2 {
 }
 
 .formasdepago img {
-  width: 150px;
-  height: 100px;
+  width: 15.62em;
+  height: 6.25em;
 }
 
 /*footer*/
@@ -410,10 +408,7 @@ footer{
   font-size: 20px;
   color: white;
 }
-main {
-  width: 80%;
-  margin: auto;
-}
+
 }
 
 
