@@ -41,7 +41,7 @@
               <a href="index2.html" class="btn-login">LOGIN</a>
               <p class="registrarse-login">
                 ¿No tenés cuenta?
-                <label for="btn-modal-register" class="lbl-modal-register">Registrarse</label>
+                <a href="../TPWEB-Grupo10/registro.html" class="lbl-modal-register">Registrarse</a>
               </p>
               <input type="checkbox" id="btn-modal-register" />
               <div class="modal-register">
@@ -65,7 +65,7 @@
                       </div>
                       <div class="contenedorInput-register">
                         <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="Ingrese Apellido" />
+                        <input type="text" id="apellido" placeholder="Ingrese Apellido" required/>
                       </div>
                       <div class="contenedorInput-register">
                         <label for="password">Contraseña</label>
@@ -78,6 +78,8 @@
                       <div class="botones-register">
                         <label for="btn-modal-register" id="btn-modal-close-cancelar-register">Cancelar</label>
                         <input type="submit" value="Enviar" id="btn-modal-close-guardar-register">
+                      </div>
+                      <div id="mensajeDeError" class="mensajeError">
                       </div>
                     </form>
                   </div>
@@ -200,7 +202,6 @@
       </div>
     </aside>
   </footer>
-  <script src="../TPWEB-Grupo10/js/localStore.js"></script>
 </body>
 
 </html>

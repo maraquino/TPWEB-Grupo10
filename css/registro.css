@@ -1,10 +1,61 @@
 *{
-    margin:0;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+body{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+  background-color: #ffbf004f;
 }
 section{
     display: flex;
+
 }
 article{
-    width: calc(33% - 10px);
+    display: flex;
+    margin: auto;
 }
+.contenedorInput-register {
+    width: calc(50% - 1em);
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+  }
+  .contenedorInput-register input {
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 0px;
+  }
+  #logo{
+    width: 16.6em;
+  }
+  #cargaimg {
+    width: 100px;
+    height:100px;
+  }
+  #registrar{
+    padding: 15px;
+  }
+  .contenido-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+  }
+  #registrar:hover{
+   background-color: #ffbf004f;
+  }
+
+
