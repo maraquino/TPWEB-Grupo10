@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding: 0px;
+}
+section{
+    display: flex;
+}
+article{
+    width: calc(33% - 10px);
+}

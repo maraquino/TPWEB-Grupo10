@@ -8,7 +8,7 @@
   <script src="https://kit.fontawesome.com/d29453ffcf.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="stylesheet" href="css/login.css" />
-  <title>Home</title>
+  <title>Casu</title>
 </head>
 
 <body>
@@ -47,13 +47,14 @@
               <div class="modal-register">
                 <div class="contenedor-register">
                   <header class="casita-register">
-                    <img src="img/cargarimagen2.jpg" alt="casita" />
+                    <img src="img/cargaimagen.png" alt="casita" id="cargaimg"/>
                     <div class="contenedorInput-register">
                       <input type="file" id="archivo" name="archivo" />
                     </div>
                   </header>
+                </form>
                   <div>
-                    <form action="#" method="post" class="contenido-register">
+                    <form action="#" class="contenido-register" id="formulario">
                       <div class="contenedorInput-register">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Ingrese email" required />
@@ -76,13 +77,12 @@
                       </div>
                       <div class="botones-register">
                         <label for="btn-modal-register" id="btn-modal-close-cancelar-register">Cancelar</label>
-                        <label for="btn-modal-register" id="btn-modal-close-guardar-register">Guardar</label>
+                        <input type="submit" value="Enviar" id="btn-modal-close-guardar-register">
                       </div>
                     </form>
                   </div>
                 </div>
               </div>
-            </form>
           </div>
         </div>
       </div>
@@ -200,6 +200,7 @@
       </div>
     </aside>
   </footer>
+  <script src="../TPWEB-Grupo10/js/localStore.js"></script>
 </body>
 
 </html>
