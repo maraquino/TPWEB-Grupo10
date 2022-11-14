@@ -25,11 +25,8 @@ article{
     margin: auto;
 }
 .contenedorInput-register {
-    width: calc(50% - 1em);
-    justify-content:space-between;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: auto;
+    width: 50%;
+    font-size: 0.8em;
   }
   .contenedorInput-register input {
     text-align: center;
@@ -40,12 +37,11 @@ article{
   #logo{
     width: 16.6em;
   }
-  #cargaimg {
-    width: 100px;
-    height:100px;
-  }
   #registrar{
     padding: 15px;
+  }
+  #button-cancelar{
+    padding: 15px 0px;
   }
   .contenido-register{
     display: flex;
@@ -55,7 +51,16 @@ article{
     font-family: cursive;
   }
   #registrar:hover{
-   background-color: #ffbf004f;
+   background-color: #00ffb357;
   }
+  a{
+  padding: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  }
+  a:hover{
+    background-color: #c73e084f;
+    border: 1px solid #000;
+   }
 
 

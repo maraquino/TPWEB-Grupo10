@@ -8,6 +8,16 @@
   <script src="https://kit.fontawesome.com/d29453ffcf.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="../TPWEB-Grupo10/css/default.css">
+  <link rel="stylesheet" href="../TPWEB-Grupo10/css/nivo-slider.css">
+  <link rel="stylesheet" href="../TPWEB-Grupo10/css/micss.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+  <script src="../TPWEB-Grupo10/js/jquery.nivo.slider.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('#sliderHome').nivoSlider();
+    });
+  </script>
   <title>Casu</title>
 </head>
 
@@ -99,8 +109,15 @@
     </ul>
   </nav>
   <main>
-    <section class="contenedorbanner">
-      <ul class="banner">
+    <section class="contenedor">
+      <article class="slider-wrapper theme-default">
+          <div id="sliderHome" class="nivoSlider">
+            <img src="../TPWEB-Grupo10/img/banner1.webp" alt="banner1" data-transition="slideInLeft">
+            <img src="../TPWEB-Grupo10/img/banner2.webp" alt="banner2">
+            <img src="../TPWEB-Grupo10/img/banner3.webp" alt="banner3">
+          </div>
+      </article>
+      <!-- <ul class="banner">
         <li id="banner1">
           <img src="img/banner1.webp" alt="banner 1" class="banner" />
         </li>
@@ -115,7 +132,7 @@
         <li><a href="#banner1">1</a></li>
         <li><a href="#banner2">2</a></li>
         <li><a href="#banner3">3</a></li>
-      </ul>
+      </ul> -->
     </section>
     <article class="categoria_titulo">
       <a href="categorias1.html">Categorías</a>
