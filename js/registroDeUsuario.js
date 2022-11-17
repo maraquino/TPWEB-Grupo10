@@ -31,15 +31,16 @@ function validar(){
     if(error){
         document.querySelector("#mensaje").innerHTML=mensajeError;
     }else{
+        // let nombreUsuario = document.querySelector("#nombre-register").value;
+        // let contraseñaUsuario = document.querySelector("#repetir").value;
+        // let usuarioNuevo = {
+        //     usuario : nombreUsuario,
+        //     contraseña: contraseñaUsuario
+        // };
+        // localStorage.setItem("usuarioNuevo",JSON.stringify(usuarioNuevo));
         form.submit();
     }
 }
-const usuario = document.querySelector("#usuario");
-usuario.addEventListener("keyup",(item)=>{
-    item.preventDefault;
-    cambiarStilo();
-});
-function cambiarStilo(){
-    const login = document.getElementById("login-boton");
-    login.style.backgroundColor = "#04D99D";
-    }
+
+
+    
