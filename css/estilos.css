@@ -1,4 +1,4 @@
-/*
+  /*
 amarillo #FFBF00
 naranja #F27405
 rosa #F279B2
@@ -277,7 +277,7 @@ h3 {
   transform: scale(1.2);
 }
 
-#nombre {
+.nombre-articulo{
   position: absolute;
   bottom: 2px;
   border-radius: 10px;
@@ -304,7 +304,7 @@ h3 {
   text-align: center;
 }
 
-#preciop {
+.preciop {
   position: absolute;
   width: 70px;
   height: 30px;
@@ -319,12 +319,16 @@ h3 {
   color: white;
 }
 
-#carritoir {
-  color: white;
+
+.carritoir {
+  color: #ffffff;
   position: absolute;
   bottom: 5px;
   right: 15px;
   font-size: 20px;
+}
+.carritoir:hover{
+  color: #F27405;
 }
 
 /*Formas de pago*/
@@ -437,6 +441,15 @@ footer{
   #carrito {
     font-size: 2.18em;
     color: #04D99D;
+  }
+  #contenedor-carrito{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  #cantidadDeProductos{
+    font-size: 2.18em;
+    margin-left: 0.5em;
   }
   
   #buscador {
@@ -674,7 +687,7 @@ footer{
     transform: scale(1.2);
   }
   
-  #nombre {
+  .nombre-articulo {
     position: absolute;
     bottom: 2px;
     border-radius: 10px;
@@ -701,7 +714,7 @@ footer{
     text-align: center;
   }
   
-  #preciop {
+  .preciop {
     position: absolute;
     width: 70px;
     height: 30px;
@@ -716,12 +729,15 @@ footer{
     color: white;
   }
   
-  #carritoir {
-    color: white;
+  .carritoir {
+    color: #ffffff;
     position: absolute;
     bottom: 5px;
     right: 15px;
     font-size: 20px;
+  }
+  .carritoir:hover{
+    color: #F27405;
   }
   
   /*Formas de pago*/
@@ -1073,7 +1089,7 @@ h3 {
   transform: scale(1.2);
 }
 
-#nombre {
+.nombre-articulo {
   position: absolute;
   bottom: 2px;
   border-radius: 10px;
@@ -1100,7 +1116,7 @@ h3 {
   text-align: center;
 }
 
-#preciop {
+.preciop {
   position: absolute;
   width: 70px;
   height: 30px;
@@ -1115,12 +1131,15 @@ h3 {
   color: white;
 }
 
-#carritoir {
-  color: white;
+.carritoir {
+  color: #ffffff;
   position: absolute;
   bottom: 5px;
   right: 15px;
   font-size: 20px;
+}
+.carritoir:hover{
+  color: #F27405;
 }
 
 /*Formas de pago*/

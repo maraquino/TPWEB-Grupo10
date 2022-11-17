@@ -6,7 +6,7 @@ usuario.addEventListener("keyup",(item)=>{
 });
 function cambiarStilo(){
     const login = document.getElementById("login-boton");
-    if(usuario.value.length>0&&contraseñaLogin.value.length>0){
+    if(usuario.value.length!=0&&contraseñaLogin.value.length>0){
     login.style.backgroundColor = "#04D99D";
 }  
     contraseñaLogin.addEventListener("keyup",(item)=>{
@@ -14,7 +14,7 @@ function cambiarStilo(){
     });
     function cambiarStilo(){
         const login = document.getElementById("login-boton");
-        if(usuario.value.length>0&&contraseñaLogin.value.length>0){
+        if(usuario.value.length!=0&&contraseñaLogin.value.length>0){
         login.style.backgroundColor = "#04D99D";
     }
         }
