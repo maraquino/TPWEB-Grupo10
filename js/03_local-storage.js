@@ -29,8 +29,11 @@ function agregarProductoAriel(){
         cantidad: cantidadde,
         precio: 420
          }
-         carrito.push(productoNuevo);
-         localStorage.setItem("CarritoDeCompra",JSON.stringify(carrito));
+        carrito.push(productoNuevo);
+        localStorage.setItem("CarritoDeCompra",JSON.stringify(carrito));
+        let carritoCantidad=document.querySelector("#cantidadDeProductos");
+        let cantidadDelCarrito=carrito.length;
+        carritoCantidad.innerHTML=cantidadDelCarrito
              }
          }
 
@@ -41,33 +44,42 @@ function agregarProductoCoca(){
         nombre: "Coca Cola 2,25L",
         cantidad: cantidadde,
         precio: 420
-}
-carrito.push(productoNuevo);
-localStorage.setItem("CarritoDeCompra",JSON.stringify(carrito));
-    }
-}
+        }
+        carrito.push(productoNuevo);
+        localStorage.setItem("CarritoDeCompra",JSON.stringify(carrito));
+        let carritoCantidad=document.querySelector("#cantidadDeProductos");
+        let cantidadDelCarrito=carrito.length;
+        carritoCantidad.innerHTML=cantidadDelCarrito
+            }
+        }
 function agregarProducto(){
-    let cantidadde=document.querySelector("#cantidadCerveza").value;
-    if(cantidadde>0){
-    let productoNuevo={
+        let cantidadde=document.querySelector("#cantidadCerveza").value;
+        if(cantidadde>0){
+        let productoNuevo={
         nombre: "Cerveza Imperial Gold",
         cantidad: cantidadde,
         precio: 320
-}
-carrito.push(productoNuevo);
-localStorage.setItem("CarritoDeCompra",JSON.stringify(carrito));
-    }
-}
+        }
+        carrito.push(productoNuevo);
+        localStorage.setItem("CarritoDeCompra",JSON.stringify(carrito));
+        let carritoCantidad=document.querySelector("#cantidadDeProductos");
+        let cantidadDelCarrito=carrito.length;
+        carritoCantidad.innerHTML=cantidadDelCarrito
+        }
+        }
 
 function agregarProductoCafe(){
-    let cantidadde=document.querySelector("#cantidadDeCafe").value;
-    if(cantidadde>0){
-    let productoNuevo={
+        let cantidadde=document.querySelector("#cantidadDeCafe").value;
+        if(cantidadde>0){
+        let productoNuevo={
         nombre: "Café",
         cantidad: cantidadde,
         precio: 130
-}
-carrito.push(productoNuevo);
-localStorage.setItem("CarritoDeCompra",JSON.stringify(carrito));
-    }
-}
+        }
+        carrito.push(productoNuevo);
+        localStorage.setItem("CarritoDeCompra",JSON.stringify(carrito));
+        let carritoCantidad=document.querySelector("#cantidadDeProductos");
+        let cantidadDelCarrito=carrito.length;
+        carritoCantidad.innerHTML=cantidadDelCarrito
+            }
+        }
