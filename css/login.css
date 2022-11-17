@@ -246,16 +246,15 @@
 }
 
 .contenido-login .btn-login {
-  width: 45px;
-  height: 20px;
   padding: 8px 25px;
-  background-color: #04D99D;
+  background-color: #d90404;
   border-radius: 4px;
   color: white;
   justify-content: center;
   font-size: 1.4em;
   font-weight: bold;
 }
+
 #cargaimg {
   width: 100px;
   height:100px;
