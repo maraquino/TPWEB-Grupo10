@@ -18,17 +18,28 @@
     width: 70%;
     margin: auto;
     font-size: 35px;
-    color:#F279B2;
+    color: #F279B2;
 }
+
 
 /*direcciones*/
 
 main section {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
     margin: auto;
     margin-bottom: 20px;
+}
+
+#dato1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
 }
 
 section .contenedor {
@@ -59,149 +70,46 @@ section .contenedor {
 
 .contenedor .tabla {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: #FFBF00 solid 1px;
     width: 100%;
     margin: auto;
 }
 
-.metodosdepago .tabla {
+.direcciones .tabla div {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: #FFBF00 solid 1px;
+    flex-direction: row;
+    box-sizing: border-box;
     width: 100%;
-    margin: auto;
 }
 
 .direcciones .tabla h4 {
-    padding: 20px;
-    width: calc(50%);
-    box-sizing: border-box;
     color: white;
     background-color: #FFBF00;
+    padding: 10px;
+    font-size: 16.8px;
+    width: 90%;
+}
+
+.encabezadoTabla i{
+    width: 17.5px;
 }
 
 .direcciones .tabla p {
     padding: 20px;
-    width: calc(50%);
     box-sizing: border-box;
     border: #FFBF00 solid 1px;
+    width: 90%;
 }
 
-.tabla h4 {
-    padding: 20px;
-    box-sizing: border-box;
-    color: white;
-    background-color: #FFBF00;
-    width: 100%;
-}
 
-.tabla p {
-    padding: 20px;
-    box-sizing: border-box;
-    border: #FFBF00 solid 1px;
-    width: 100%;
-}
-
-.iconos {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 25px;
-}
-
-.iconos i {
+i{
+    font-size: 20px;
     color: #F27405;
-    margin: 15px;
-}
-
-
-
-/*boton ocultar*/
-
-.modal {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#agregar:checked~.modal {
-    opacity: 1;
-    visibility: visible;
-}
-
-.contenido {
-    width: 350px;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    justify-items: center;
-    background: white;
-    transition: all 500ms ease;
-    transform: translateY(-30%);
-    transform: translateY(-30%);
-    border-radius: 4px;
-    border: solid #04D99D 2px;
-    position: relative;
-}
-
-#agregar:checked~.modal .contenido {
-    transform: translateY(0%);
-}
-
-.contenido .encabezado{
-    width: 100%;
-    box-sizing: border-box;
-    background-color:#04D99D;
-}
-
-.encabezado h3{
-    color: white;
-}
-
-.contenido2 .encabezado{
-    width: 100%;
-    box-sizing: border-box;
-    background-color:#04D99D;
-}
-
-.contenido .encabezado i {
-    font-size: 25px;
-    color: white;
-}
-
-.contenido .cerrar {
-    position: absolute;
-    top: -18px;
-    right: -21px;
+    margin: 10px;
     cursor: pointer;
-    border: #04D99D solid 4px;
-    border-radius: 100px;
-    padding: 5px 10px;
-    background: white;
-    font-size: 18px;
-    font-weight: bold;
-    color: #04D99D;
 }
 
 .agregar {
@@ -212,16 +120,105 @@ section .contenedor {
     border: #F279B2 solid 2px;
     color: #F279B2;
 }
-
-#agregar {
-    display: none;
+#btn-agregar-pago{
+background: white;
+padding: 10px 15px;
+border-radius: 4px;
+cursor: pointer;
+border: #F279B2 solid 2px;
+color: #F279B2;
+}
+.metodosdepago .tabla {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
 }
 
-form {
+.encabezadoPagos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.encabezadoPagos h4{
+    padding: 10px;
+    font-size: 16.8px;
+    color: white;
+    background-color: #FFBF00;
+    text-align: center;
+    width: 94%;
+}
+
+.metodosdepago p{
+    width: 96%;
+    border: #FFBF00 solid 1px;    
+    padding: 20px;
+}
+.metodosdepago div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+}
+.encabezadoPagos i{
+        width: 17.5px;
+    
+}
+/*modal*/
+
+#agregarDireccion {
+    border: solid #04D99D 2px;
+    border-radius: 4px;
+    margin: auto;
+    width: 380px;
+}
+.metodosdepago button{
+    background-color: white;
+    border: none;
+}
+.contenedorinput p {
+    display: block;
+    color: #04D99D;
+    width: 290px;
+    margin: auto;
+    text-align: right;
+}
+
+#agregarDireccion .contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    justify-items: center;
+    position: relative;
+}
+
+.fromulario-mis-direcciones {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 20px 5px;
+}
+
+#agregarDireccion .encabezadoModal {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #04D99D;
+}
+
+.encabezadoModal h3 {
+    color: white;
+    padding: 15px;
+}
+
+.contenido .encabezadoModal i {
+    font-size: 25px;
+    color: white;
 }
 
 .contenedorinput {
@@ -234,14 +231,16 @@ form {
 }
 
 .contenedorinput input {
-    width: calc(50%);;
+    width: calc(50%);
+    ;
     padding: 5px 9px;
     border-radius: 4px;
     margin: 5px;
 }
 
 .contenedorinput select {
-    width: calc(56%);;
+    width: calc(56%);
+    ;
     padding: 5px 9px;
     border-radius: 4px;
     margin: 5px;
@@ -269,7 +268,7 @@ form {
 }
 
 .contenedorinput2 label {
-    width:  40px;
+    width: 40px;
     margin: 5px;
     text-align: center;
     padding-right: 6px;
@@ -284,78 +283,79 @@ form {
     align-self: flex-end;
     padding: 5px;
     margin: 5px;
+    border-radius: 4px;
+}
+
+.contenido .cancelar {
+    border-radius: 4px;
+    background-color: #04D99D;
+    border: #04D99D;
+    color: white;
+    width: 90px;
+    height: 30px;
+    align-self: flex-end;
+    padding: 5px;
+    margin: 5px;
     margin-right: 6%;
+}
+
+.botones {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 
 /*modal2*/
 
-.modal2 {
-    width: 100%;
-    height: 100vh;
+#agregarMetodosDePago div{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
+    flex-direction: column;
 }
 
-.contenido2 {
-    width: 350px;
-    height: 320px;
+#agregarMetodosDePago .contenido2 .encabezadoModal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #04D99D;
+}
+
+#agregarMetodosDePago {
+    border: solid #04D99D 2px;
+    border-radius: 4px;
     margin: auto;
+    width: 380px;
+}
+
+#agregarMetodosDePago .contenido {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
     justify-items: center;
-    background: white;
-    transition: all 500ms ease;
-    transform: translateY(-30%);
-    transform: translateY(-30%);
-    border-radius: 4px;
-    border: solid #04D99D 2px;
     position: relative;
 }
 
-#agregar-pago:checked~.modal2 {
-    opacity: 1;
-    visibility: visible;
-}
-
-#agregar-pago:checked~.modal2 .contenido2 {
-    transform: translateY(0%);
-}
-
-#agregar-pago {
-    display: none;
-}
-
-#agregar:checked~.modal .contenido2 {
-    transform: translateY(0%);
-}
-
-.contenido2 .encabezado i {
+.contenido2 .encabezadoModal i {
     font-size: 25px;
     color: white;
 }
 
-.contenido2 .cerrar {
-    position: absolute;
-    top: -18px;
-    right: -21px;
+.contenido2 .cancelar {
     cursor: pointer;
-    border: #04D99D solid 4px;
-    border-radius: 100px;
-    padding: 5px 10px;
-    background: white;
-    font-size: 18px;
-    font-weight: bold;
-    color: #04D99D;
+    border-radius: 4px;
+    background: #04D99D;
+    color: white;
+    width: 90px;
+    height: 30px;
+    align-self: flex-end;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 6%;
+    background-color: #04D99D;
+    border: #04D99D;
 }
 
 .contenido2 .btn-guardar2 {
@@ -366,30 +366,74 @@ form {
     margin: 5px;
     margin-right: 6%;
     color: white;
-    background-color:#04D99D;
+    background-color: #04D99D;
     border: #04D99D;
+    border-radius: 4px;
 }
 
-.contenido2 .contenedorinput2 {
+#agregarMetodosDePago .contenedorinput {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin: auto;
-    justify-content: flex-end;
     align-items: center;
     padding-right: 18px;
     box-sizing: border-box;
 }
 
-.contenido2 .contenedorinput2 input {
-    width: 25px;
+.contenido2 .contenedorinput input {
+    width: 40%;
     padding: 5px 9px;
     border-radius: 4px;
 }
 
-.contenido2 .contenedorinput2 label {
-    width:  71px;
+.contenido2 .contenedorinput label {
+    width: 40%;
     margin: 5px;
-    text-align: center;
-    padding-right: 8px;
+    text-align: right;
+}
+
+#agregarMetodosDePago .contenedorinput2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+#agregarMetodosDePago #codigo{
+    width: 30px;
+    margin-right: -300px;
+}
+
+#agregarMetodosDePago .contenedorinput2 input{
+    width: 65px;
+    margin-right: -318px;
+}
+
+#agregarMetodosDePago .contenedorinput2 label{
+    text-align: right;
+    width: 50px;
+
+}
+
+.error{
+    height: 15px;
+}
+#formulario-mis-mp .error p{
+    border: none;
+    padding: 0px;
+    color: #04D99D;
+}
+#agregarMetodosDePago div{
+    display: flex;
+    flex-direction: column;
+}
+
+#agregarMetodosDePago .contenedorinput2 .error{
+    width: 80%;
+    text-align: right;
+    margin-bottom: -40px;
+}
+
+button{
+    border:none;
+    background-color: white;
 }

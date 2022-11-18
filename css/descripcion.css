@@ -108,27 +108,35 @@
     margin: 10px;
 }
 
-.prodSimilar {
+/* .prodSimilar {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:auto;
+    width: 90%;
+    height: 300px;
+    justify-content: space-around;
+
+   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
     width: 90%;
     height: 300px;
-    position: relative;
     border: #04D99D solid 10px;
     margin: auto;
     border-radius: 60px 0 60px 0;
     margin-top: 10px;
     margin-bottom: 20px;
-}
+}*/
 
 
-#similares1,
+/*#similares1,
 #similares12,
-#similares14 {
-    position: absolute;
+#similares13,
+#similares4,
+#similares5 {
     display: block;
     background-image: url(../img/sprite.jpg);
     background-size: 200px 180px;
@@ -176,7 +184,6 @@
     height: 180px;
     border-radius: 50%;
     background-repeat: no-repeat;
-    left: 30px;
 }
 
 #nombresimilar {
@@ -196,51 +203,35 @@
 }
 
 .prodSimilar div {
-    display: flex;
-    position: absolute;
     height: 220px;
-    width: calc(33.3% -5x);
-    padding: 10px;
+    width: 200px;
     border-radius: 60px 0 60px 0;
     background-color: #04D99D;
-    top: 30px;
-
-
 }
 
 #productosimilar1 {
     display: flex;
-    position: absolute;
     height: 220px;
     padding: 10px;
     width: 223px;
-
     border-radius: 60px 0 60px 0;
-    left: 40%;
-
 }
 
 #productosimilar2 {
     display: flex;
-    position: absolute;
     height: 220px;
     padding: 10px;
     width: 223px;
-
     border-radius: 60px 0 60px 0;
-    left: 5%;
-
 }
 
 #productosimilar3 {
     right: 5%;
     display: flex;
-    position: absolute;
     height: 220px;
     width: 223px;
     padding: 10px;
     border-radius: 60px 0 60px 0;
-
 }
 
 #preciosimilar {
@@ -258,5 +249,106 @@
     font-size: large;
     padding-top: 5px;
     color: white;
+}*/
 
-}
+.productosSimilares {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .productoSimilar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(25% - 10px);
+    padding-top: 25px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    height: 280px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    transform: scale(1);
+    position: relative;
+  }
+  
+  .productoSimilar a img {
+    width: 160px;
+    height: 180px;
+    border-radius: 100%;
+    transform: scale(1);
+    transition: 1s;
+    position: absolute;
+    left: 100px;
+  }
+
+  .productoSimilar:hover{
+    border-radius: 15px;
+    border: #04D99D 1px solid;
+    transition: 0s;
+  }
+  
+  .productoSimilar a img:hover {
+    transform: scale(1.2);
+  }
+
+
+  #nombre {
+    position: absolute;
+    bottom: 2px;
+    border-radius: 10px;
+    background-color: #04D99D;
+    left: 6px;
+    height: 30px;
+    width: 95%;
+    text-align: left;
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    padding-top: 2px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  
+  .productoSimilar input {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    bottom: 39px;
+    right: 10px;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  #preciop {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background-color: #F27405;
+    border-radius: 15px 0 0 15px;
+    bottom: 70px;
+    padding-top: 12px;
+    right: 0%;
+    border: #F27405 1px solid;
+    font-style: italic;
+    text-align: center;
+    color: white;
+  }
+  
+  #carritoir {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 20px;
+  }

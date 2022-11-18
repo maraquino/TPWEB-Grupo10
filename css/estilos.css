@@ -167,7 +167,7 @@ ul.banner li:target {
   font-size: 1.6em;
 }
 
-.categoria {
+.categorias {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -179,7 +179,7 @@ ul.banner li:target {
   margin-bottom: 40px;
 }
 
-.categoria article {
+.categorias article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,7 +196,7 @@ ul.banner li:target {
   border-radius: 5%;
 }
 
-.categoria a img {
+.categorias a img {
   width: 180px;
   height: 150px;
   border-radius: 100%;
@@ -204,7 +204,7 @@ ul.banner li:target {
   transition: 1s;
 }
 
-.categoria a img:hover {
+.categorias a img:hover {
   transform: scale(1.2);
 }
 
@@ -277,7 +277,7 @@ h3 {
   transform: scale(1.2);
 }
 
-#nombre {
+.nombre-articulo {
   position: absolute;
   bottom: 2px;
   border-radius: 10px;
@@ -304,7 +304,7 @@ h3 {
   text-align: center;
 }
 
-#preciop {
+.preciop {
   position: absolute;
   width: 70px;
   height: 30px;
@@ -319,7 +319,7 @@ h3 {
   color: white;
 }
 
-#carritoir {
+.carritoir {
   color: white;
   position: absolute;
   bottom: 5px;
@@ -438,6 +438,15 @@ footer{
     font-size: 2.18em;
     color: #04D99D;
   }
+  #contenedor-carrito{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+    }
+    #cantidadDeProductos{
+      font-size: 2.18em;
+      margin-left: 0.5em;
+    }
   
   #buscador {
     border: #04D99D 1px solid;
@@ -565,7 +574,7 @@ footer{
     font-size: 1.6em;
   }
   
-  .categoria {
+  .categorias {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -576,7 +585,7 @@ footer{
     margin-bottom: 40px;
   }
   
-  .categoria article {
+  .categorias article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -594,7 +603,7 @@ footer{
     border-radius: 5%;
   }
   
-  .categoria a img {
+  .categorias a img {
     width: 180px;
     height: 150px;
     border-radius: 100%;
@@ -602,7 +611,7 @@ footer{
     transition: 1s;
   }
   
-  .categoria a img:hover {
+  .categorias a img:hover {
     transform: scale(1.2);
   }
   
@@ -674,7 +683,7 @@ footer{
     transform: scale(1.2);
   }
   
-  #nombre {
+  .nombre-articulo {
     position: absolute;
     bottom: 2px;
     border-radius: 10px;
@@ -701,7 +710,7 @@ footer{
     text-align: center;
   }
   
-  #preciop {
+  .preciop {
     position: absolute;
     width: 70px;
     height: 30px;
@@ -716,13 +725,16 @@ footer{
     color: white;
   }
   
-  #carritoir {
+  .carritoir {
     color: white;
     position: absolute;
     bottom: 5px;
     right: 15px;
     font-size: 20px;
   }
+  .carritoir:hover{
+      color: #F27405;
+    }
   
   /*Formas de pago*/
   
@@ -792,7 +804,8 @@ footer{
     color: white;
   }
   
-  }
+}
+
 @media screen and (min-width:60em ) {
   
 body {
@@ -963,11 +976,11 @@ ul.banner li:target {
   font-size: 1.6em;
 }
 
-.categoria {
+.categorias {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
   width: 95%;
   margin: auto;
@@ -975,7 +988,7 @@ ul.banner li:target {
   margin-bottom: 40px;
 }
 
-.categoria article {
+.categorias article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -993,7 +1006,7 @@ ul.banner li:target {
   border-radius: 5%;
 }
 
-.categoria a img {
+.categorias a img {
   width: 180px;
   height: 150px;
   border-radius: 100%;
@@ -1001,7 +1014,7 @@ ul.banner li:target {
   transition: 1s;
 }
 
-.categoria a img:hover {
+.categorias a img:hover {
   transform: scale(1.2);
 }
 
@@ -1073,7 +1086,7 @@ h3 {
   transform: scale(1.2);
 }
 
-#nombre {
+.nombre-articulo {
   position: absolute;
   bottom: 2px;
   border-radius: 10px;
@@ -1100,7 +1113,7 @@ h3 {
   text-align: center;
 }
 
-#preciop {
+.preciop {
   position: absolute;
   width: 70px;
   height: 30px;
@@ -1115,12 +1128,15 @@ h3 {
   color: white;
 }
 
-#carritoir {
+.carritoir {
   color: white;
   position: absolute;
   bottom: 5px;
   right: 15px;
   font-size: 20px;
+}
+.carritoir:hover{
+  color: #F27405;
 }
 
 /*Formas de pago*/
@@ -1193,4 +1209,6 @@ footer{
 
 }
 
-
+.filtro{
+  display: none;
+}

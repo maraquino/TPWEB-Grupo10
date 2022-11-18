@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,17 +17,11 @@
   
           <form action="">
             <label for="buscador"></label>
-            <input
-              type="search"
-              id="buscador"
-              name="buscador"
-              placeholder="Buscador"
-            />
+            <input type="search" id="buscador" name="buscador" placeholder="Buscador"/>
           </form>
           
-          <a href="carrito.html" id="carrito"
-            ><i class="fa-sharp fa-solid fa-cart-shopping"></i
-          ></a>
+          <a href="carrito.html" id="carrito"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+          <p id="cantidadDeProductos">0</p>
         </section>
       </header>
     <nav>
@@ -45,47 +38,13 @@
         </article>
         <section class="carrito">
             <article>
-                <div class="tabla">
-                    <h4>Producto</h4>
-                    <h4>Cantidad</h4>
-                    <h4>Precio</h4>
-
-                    <p>Mermelada</p>
-                    <p>2</p>
-                    <p>$100</p>
-
-                    <p>Polenta</p>
-                    <p>2</p>
-                    <p>$100</p>
-
-                    <p>1kg Milanesa</p>
-                    <p>1</p>
-                    <p>$100</p>
-
-                    <p>Agua mineral</p>
-                    <p>3</p>
-                    <p>$100</p>
-
-                    <p>Caja Garotos</p>
-                    <p>1</p>
-                    <p>$100</p>
-
-                    <p>Jabón Líquido</p>
-                    <p>1</p>
-                    <p>$100</p>
-
-                    <p>1kg Tomate</p>
-                    <p>1</p>
-                    <p>$100</p>
-                </div>
-                <div class="iconos">
-                    <a href=""><i class="fa-solid fa-trash"></i></a>
-                    <a href=""><i class="fa-solid fa-trash"></i></a>
-                    <a href=""><i class="fa-solid fa-trash"></i></a>
-                    <a href=""><i class="fa-solid fa-trash"></i></a>
-                    <a href=""><i class="fa-solid fa-trash"></i></a>
-                    <a href=""><i class="fa-solid fa-trash"></i></a>
-                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                <div class="tabla2" id="tabla-carrito">
+                    <div class="encabezadoPagos">
+                        <h4>Producto</h4>
+                        <h4>Precio</h4>
+                        <h4>Cantidad</h4>
+                        <i class="fa-solid fa-trash" style="visibility:hidden"></i>
+                    </div>
                 </div>
             </article>
 
@@ -99,7 +58,7 @@
                             <p><i class="fa-solid fa-credit-card"></i></p>
                             <label for="pagar" class="cerrar">X</label>
                         </div>
-                        <form action="#" method="post">
+                        <form action="#">
                             <div class="contenedorinput">
                                 <label for="">Tarjetas Guardadas</label>
                                 <select name="provincias" id="provincias">
@@ -144,8 +103,8 @@
                                 <input type="checkbox" name="otradireccion" id="">
                                 <label for="otradireccion">Otra Dirección</label>
                             </div>
+                            <input type="submit" value="Guardar" class="btn-guardar">
                         </form>
-                        <button class="btn-guardar">Guardar</button>
                     </div>
 
                 </div>
@@ -167,6 +126,7 @@
           <div class="columna2">
             <p>Datos del Grupo:</p>
             <p>
+              Sersewitz Guido-42951948<br />
               Martinez Marcos- 38046528<br />
               Aquino Mariana - 43032501 <br />
               Sosa Ortiz Andrea - 38466989
@@ -179,7 +139,7 @@
           </div>
         </aside>
       </footer>
-
+      <script src="js/carrito.js"></script>
 </body>
 
 </html>

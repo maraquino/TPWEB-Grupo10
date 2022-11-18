@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,17 +17,13 @@
   
           <form action="">
             <label for="buscador"></label>
-            <input
-              type="search"
-              id="buscador"
-              name="buscador"
-              placeholder="Buscador"
-            />
+            <input type="search" id="buscador" name="buscador" placeholder="Buscador"/>
           </form>
           
           <a href="carrito.html" id="carrito"
             ><i class="fa-sharp fa-solid fa-cart-shopping"></i
           ></a>
+          <p id="cantidadDeProductos">0</p>
         </section>
       </header>
     <nav>
@@ -44,44 +39,45 @@
             <a href="categorias1.html">Categorías</a>
         </article>
 
-        <section class="categoria" id="todaslascategorias">
-            <article class="clase1">
+        <section class="categorias" id="todaslascategorias">
+            <article class="categoria" id="cat-beb">
                 <h3>Bebidas</h3>
                 <a href="categorias2.html"><img src="img/bebidas.png" alt="CuidadoPersonal"></a>
             </article>
-            <article class="clase2">
+            <article class="categoria" id="cat-alm">
                 <h3>Almacen</h3>
                 <a href=""><img src="img/almacen.jpg" alt="Almacen"></a>
             </article>
-            <article class="clase3">
+            <article class="categoria" id="cat-cui-hog">
                 <h3>CuidadodelHogar</h3>
                 <a href=""><img src="img/cuidadodelHogar.webp" alt="CuidadoDelHogar"></a>
             </article>
-            <article class="clase4">
+            <article class="categoria" id="cat-fru-ver">
                 <h3>Frutas y Verduras</h3>
                 <a href=""><img src="img/frutas.png" alt="CuidadoPersonal"></a>
             </article>
-            <article class="clase2">
+            <article class="categoria" id="cat-kios">
                 <h3>Kiosco</h3>
                 <a href=""><img src="img/chocolate.png" alt="Almacen"></a>
             </article>
-            <article class="clase3">
+            <article class="categoria" id="cat-masc">
                 <h3>Mascotas</h3>
                 <a href=""><img src="img/perro.png" alt="CuidadoDelHogar"></a>
             </article>
-            <article class="clase1">
+            <article class="categoria" id="cat-cui-per">
                 <h3>Cuidado Personal</h3>
                 <a href=""><img src="img/uidadoPersonal.webp" alt="CuidadoPersonal"></a>
             </article>
-            <article class="clase2">
+            <article class="categoria" id="cat-elec-hog">
                 <h3>Electro Hogar</h3>
                 <a href=""><img src="img/heladera.png" alt="Almacen"></a>
             </article>
-            <article class="clase3">
+            <article class="categoria" id="cat-perf">
                 <h3>Perfumería</h3>
                 <a href=""><img src="img/perfume.png" alt="CuidadoDelHogar"></a>
             </article>
         </section>
+        <section class ="resultado"></section>
         
     </main>
     <footer>
@@ -96,10 +92,11 @@
           <div class="columna2">
             <p>Datos del Grupo:</p>
             <p>
+              Sersewitz Guido-42951948<br />
               Martinez Marcos- 38046528<br />
               Aquino Mariana - 43032501 <br />
               Sosa Ortiz Andrea - 38466989
-            </p>
+          </p>
           </div>
           <div class="columna3">
             <p>Seguinos en</p>
@@ -108,6 +105,9 @@
           </div>
         </aside>
       </footer>
-</body>
+      <script src="js/carrito.js"></script>
+      <script src="js/categoria.js"></script>
+
+    </body>
 
 </html>
