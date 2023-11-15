@@ -98,7 +98,10 @@
           </div>
         </div>
       </div>
-      <a href="carrito.html" id="carrito"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+      <div id="contenedor-carrito">
+        <a href="carrito.html" id="carrito"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        <p id="cantidadDeProductos">0</p>
+      </div>
     </section>
   </header>
   <nav>
@@ -160,31 +163,31 @@
     <aside class="masvendidos">
       <div>
         <a href=""><img src="img/imgcafe.jfif" alt="aguamineral" /></a>
-        <p id="preciop">$420</p>
-        <p id="nombre">Coca Cola 2,25L</p>
-        <input type="number" min="1" />
-        <a href="" id="carritoir"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        <p id="precioCafe" class="preciop">$130</p>
+        <p id="nombreCafe" class="nombre-articulo">Café</p>
+        <input type="number" min="1" id="cantidadDeCafe"/>
+        <button href="" id="carritoCafe"><i class="carritoir fa-sharp fa-solid fa-cart-shopping"></i></button>
       </div>
       <div>
         <a href=""><img src="img/imagencoca.jpg" alt="aguamineral" /></a>
-        <p id="preciop">$420</p>
-        <p id="nombre">Coca Cola 2,25L</p>
-        <input type="number" min="1" />
-        <a href="" id="carritoir"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        <p id="precioCoca" class="preciop">$420</p>
+        <p id="nombreCoca" class="nombre-articulo">Coca Cola 2,25L</p>
+        <input type="number" min="1" id="cantidadCoca" />
+        <button href="" id="carritoCoca"><i class="carritoir fa-sharp fa-solid fa-cart-shopping"></i></button>
       </div>
       <div>
         <a href=""><img src="img/imgcerveza.jfif" alt="aguamineral" /></a>
-        <p id="preciop">$420</p>
-        <p id="nombre">Coca Cola 2,25L</p>
-        <input type="number" min="1" />
-        <a href="" id="carritoir"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        <p id="precioCerveza" class="preciop">$320</p>
+        <p id="nombreCerveza" class="nombre-articulo" value="aaaa">Cerveza Imperial Gold</p>
+        <input type="number" min="1" id="cantidadCerveza"/>
+        <button  id="carritoCerveza"><i class="carritoir fa-sharp fa-solid fa-cart-shopping"></i></button>
       </div>
       <div>
         <a href=""><img src="img/imgariel.webp" alt="aguamineral" /></a>
-        <p id="preciop">$420</p>
-        <p id="nombre">Coca Cola 2,25L</p>
-        <input type="number" min="1" />
-        <a href="" id="carritoir"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+        <p id="precioAriel" class="preciop">$600</p>
+        <p id="nombreAriel" class="nombre-articulo">Jabon Liquido Ariel</p>
+        <input type="number" min="1" id="cantidadAriel"/>
+        <button href="" id="carritoAriel"><i class="carritoir fa-sharp fa-solid fa-cart-shopping"></i></button>
       </div>
     </aside>
     <h2>Formas de pago</h2>
@@ -220,6 +223,8 @@
       </div>
     </aside>
   </footer>
+  <script src="../TPWEB-Grupo10/js/carrito.js"></script>
+  <script src="../TPWEB-Grupo10/js/03_local-storage.js"></script>
   <script src="../TPWEB-Grupo10/js/login.js"></script>
   <script src="../TPWEB-Grupo10/js/slick.min.js"></script>
   <script>

@@ -1,4 +1,3 @@
-
 let carrito= new Array();
 //agregar cafee
 const cafe =document.querySelector("#carritoCafe");
